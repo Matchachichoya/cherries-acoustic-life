@@ -26,20 +26,27 @@
         width: 100% !important;
         }
 
-        /* Mantra biar semua konten presisi tepat di tengah */
-        .container, .container-fluid {
-         max-width: 1200px !important;
+        /* Mantra Sakti biar seluruh website otomatis presisi di tengah */
+        .container, .container-fluid, #header .row, #billboard, .features, #new-arrival, .testimonials, .blog, #footer {
+        max-width: 1200px !important;
         margin-left: auto !important;
         margin-right: auto !important;
         }
 
-        /* Merapikan logo dan menu navigasi header agar seimbang di tengah */
-        .navbar .container-fluid {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        /* Memastikan background abu-abu di bagian Hai, Kata, dan Footer tetap penuh tapi kontennya di tengah */
+        #billboard, .testimonials, #footer {
+        max-width: 100% !important;
+        }
+        #billboard .container, .testimonials .container, #footer .container {
+        max-width: 1200px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        }
+
+        /* Merapikan isi menu Navigasi atas agar pas di tengah dan seimbang */
+        .navbar .row {
+        width: 100% !important;
+        margin: 0 auto !important;
         }
 </style>
   
