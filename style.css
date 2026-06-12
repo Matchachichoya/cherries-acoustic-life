@@ -812,12 +812,12 @@ a {
   opacity: 1;
 }
 
-.icon-arrow.icon-arrow-left {
-  left: 30px;
+#billboard .icon-arrow.icon-arrow-left {
+  left: -40px;
 }
 
-.icon-arrow.icon-arrow-right {
-  right: 30px;
+#billboard .icon-arrow.icon-arrow-right {
+  right: -40px;
 }
 
 @media (max-width: 991px) {
