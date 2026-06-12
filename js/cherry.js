@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
     const container = document.getElementById("cherry-container");
 
-    const sakura = ["🌸", "🍒", "🌸"];
+    const sakura = ["🌸", "🍒", "🌸", "🍒"];
 
     for (let i = 0; i < 40; i++) {
         let cherry = document.createElement("div");
