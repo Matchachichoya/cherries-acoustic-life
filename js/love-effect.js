@@ -13,15 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
       // Cherry bomb hanya saat like
       if(this.classList.contains("liked")) {
 
+let rect = this.getBoundingClientRect();
+let centerX = rect.left + rect.width / 2;
+let centerY = rect.top + rect.height / 2;
+
         for(let i = 0; i < 40; i++) {
 
           let cherry = document.createElement("span");
 
           cherry.className = "cherry";
           cherry.innerHTML = "🍒";
+          cherry.style.left = centerX + "px";
+          cherry.style.top = centerY + "px";
 
           let angle = Math.random() * 360;
-          let distance = 40 + Math.random() * 30;
+          let distance = 200 + Math.random() * 400;
 
           let x = Math.cos(angle) * distance + "px";
           let y = Math.sin(angle) * distance + "px";
