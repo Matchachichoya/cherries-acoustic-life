@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Cherry bomb hanya saat like
       if(this.classList.contains("liked")) {
 
-        for(let i = 0; i < 8; i++) {
+        for(let i = 0; i < 40; i++) {
 
           let cherry = document.createElement("span");
 
