@@ -1617,3 +1617,43 @@ a.btn-link.text-light:after {
   transform: translateY(-50%) scale(1.1);
   transition: 0.3s;
 }
+
+/* LOVE MERAH */
+.btn-wishlist.liked {
+  color: red;
+}
+
+.btn-wishlist.liked svg {
+  fill: red;
+  stroke: red;
+}
+
+/* Tempat cherry keluar */
+.btn-wishlist {
+  position: relative;
+  overflow: visible;
+}
+
+/* Cherry bomb */
+.cherry {
+  position: absolute;
+  font-size: 18px;
+  pointer-events: none;
+  animation: cherryBoom 0.8s ease-out forwards;
+  z-index: 999;
+}
+
+@keyframes cherryBoom {
+  0% {
+    transform: translate(0,0) scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(
+      var(--x),
+      var(--y)
+    ) scale(1.5);
+    opacity: 0;
+  }
+}
