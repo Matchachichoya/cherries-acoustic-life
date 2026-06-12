@@ -1569,3 +1569,51 @@ a.btn-link.text-light:after {
         opacity: 0;
     }
 }
+
+/* Tombol panah khusus slider wisata */
+#billboard .row {
+  position: relative;
+}
+
+#billboard .icon-arrow-left,
+#billboard .icon-arrow-right {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  width: 70px;
+  height: 70px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* Posisi kiri */
+#billboard .icon-arrow-left {
+  left: -40px;
+}
+
+/* Posisi kanan */
+#billboard .icon-arrow-right {
+  right: -40px;
+}
+
+/* Ukuran gambar panah */
+#billboard .icon-arrow svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* Animasi hover lucu */
+#billboard .icon-arrow:hover {
+  background: #ffe5ec;
+  transform: translateY(-50%) scale(1.1);
+  transition: 0.3s;
+}
