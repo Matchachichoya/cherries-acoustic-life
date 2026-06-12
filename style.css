@@ -1633,26 +1633,22 @@ a.btn-link.text-light:after {
   position: relative;
   overflow: visible;
 }
-
 .cherry {
   position: fixed;
-  font-size: 25px;
+  font-size: 24px;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 99999;
   animation: cherryFall 1.5s ease-out forwards;
 }
 
 @keyframes cherryFall {
   0% {
-    transform: translate(0, 0) scale(0);
+    transform: translate(0,0) scale(0);
     opacity: 1;
   }
 
   100% {
-    transform: 
-      translate(var(--x), var(--y))
-      rotate(720deg)
-      scale(1.5);
+    transform: translate(var(--x), var(--y)) scale(1.5);
     opacity: 0;
   }
 }
