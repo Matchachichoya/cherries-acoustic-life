@@ -1634,26 +1634,25 @@ a.btn-link.text-light:after {
   overflow: visible;
 }
 
-/* Cherry bomb */
 .cherry {
-  position: absolute;
-  font-size: 18px;
+  position: fixed;
+  font-size: 25px;
   pointer-events: none;
-  animation: cherryBoom 0.8s ease-out forwards;
-  z-index: 999;
+  z-index: 9999;
+  animation: cherryFall 1.5s ease-out forwards;
 }
 
-@keyframes cherryBoom {
+@keyframes cherryFall {
   0% {
-    transform: translate(0,0) scale(0);
+    transform: translate(0, 0) scale(0);
     opacity: 1;
   }
 
   100% {
-    transform: translate(
-      var(--x),
-      var(--y)
-    ) scale(1.5);
+    transform: 
+      translate(var(--x), var(--y))
+      rotate(720deg)
+      scale(1.5);
     opacity: 0;
   }
 }
