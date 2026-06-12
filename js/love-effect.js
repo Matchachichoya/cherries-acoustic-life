@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const hearts = document.querySelectorAll(".btn-wishlist");
 
+let rect = this.getBoundingClientRect();
+let centerX = rect.left + rect.width / 2;
+let centerY = rect.top + rect.height / 2;
+  
   hearts.forEach(heart => {
 
     heart.addEventListener("click", function(e) {
@@ -12,10 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Cherry bomb hanya saat like
       if(this.classList.contains("liked")) {
-
-let rect = this.getBoundingClientRect();
-let centerX = rect.left + rect.width / 2;
-let centerY = rect.top + rect.height / 2;
 
         for(let i = 0; i < 40; i++) {
 
